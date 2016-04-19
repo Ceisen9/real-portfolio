@@ -1,0 +1,67 @@
+.name {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 100px;
+}
+
+.flexContainer{
+  border: 1px solid black;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.box{
+  border:1px solid goldenrod;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 0 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.3);
+	-webkit-border-radius: 10px;
+			border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(255,255,255, 1);
+	color: #000;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 4px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #000;
+}
+#menu{
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
