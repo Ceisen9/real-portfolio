@@ -24,6 +24,7 @@
 
 
 
+
 .flexContainer{
   /*border: 1px solid black;*/
   display:flex;
@@ -113,4 +114,20 @@ img{
 
 .contact-info{
   margin: 30px;
+}
+
+.project{
+  display:flex;
+  justify-content: space-around;
+}
+.project-pic{
+  outline: 1px solid red;
+  width: 20%;
+}
+.project-info{
+  outline: 1px solid black;
+  width: 80%;
+}
+
+.proj{
 }

@@ -9,6 +9,7 @@ $(document).ready(function() {
     loopTop: false,
     scrollingSpeed: 800,
     touchSensitivity: 3,
+    navigationPosition: 'left',
   });
 });
 
