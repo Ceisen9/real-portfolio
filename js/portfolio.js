@@ -7,9 +7,10 @@ $(document).ready(function() {
     navigationTooltips: ['Welcome', 'Work', 'About', 'Contact'],
     loopBottom: false,
     loopTop: false,
-    scrollingSpeed: 800,
-    touchSensitivity: 3,
+    scrollingSpeed: 200,
+    touchSensitivity: 5,
     navigationPosition: 'left',
+    css3: true,
   });
 });
 
