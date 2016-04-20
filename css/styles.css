@@ -47,8 +47,13 @@
   margin: 0 auto;
   width: 60%;
   height: 100%;
-
+  /*border: 1px solid goldenrod;*/
+  z-index: 1;
 }
+
+.project:hover{
+   background-color: gray;
+ }
 
 .project-pic{
   width: 100%;
@@ -173,12 +178,4 @@
   width: 35%;
   border-radius: 50%;
   margin: 0 auto;
-}
-
-.project1, .project2{
-  background-image: url("project-pics/optiroute.png");
-}
-
-.project3{
-  background-image: url("project-pics/bestbet.png");
 }
