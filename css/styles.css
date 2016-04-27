@@ -119,10 +119,11 @@
 
 .social-media-outer{
   display: inline-block;
+  /*border: 1px solid goldenrod;*/
 }
 
 .social-media-outer:hover{
-  background-color: #566270;
+  background-color: #E0E3DA;
   border-radius: 10%;
 }
 
@@ -143,6 +144,16 @@
 
 .contact-info{
   margin: 30px;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: #A593E0;
+  border-radius: 5%;
+}
+
+.contact-info:hover a{
+  background-color: #E0E3DA;
 }
 
 .aboutcontents{
