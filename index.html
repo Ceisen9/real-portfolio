@@ -6,7 +6,6 @@
   <title>Craig Eisen</title>
 
   <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
-  <link rel="stylesheet" type="text/css" href="css/examples.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
   <link href='https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
@@ -36,8 +35,8 @@
         <div class="box bottom small-flexContainer">
           <div class="left">
             <ul id="menu">
-              <li data-menuanchor="first"><a href="#first">Welcome</a></li>
-              <li data-menuanchor="second"><a href="#second">Work</a></li>
+              <li data-menuanchor="first"><a class="topMenu" href="#first">Welcome</a></li>
+              <li data-menuanchor="second"><a class="topMenu" href="#second">About</a></li>
             </ul>
           </div>
         </div>
@@ -46,35 +45,82 @@
 
     </div>
     <div class="ms-section" id="left2">
-      <div class="name center cursive">Work</div>
-      <!-- <div>
-        <ul id="menu">
-        <li data-menuanchor="first"><a href="#first" style="color:red;">Welcome</a></li>
-        <li data-menuanchor="second"><a href="#second" style="color:red";>Work</a></li>
-        <li data-menuanchor="third"><a href="#third" style="color:red";>About</a></li>
-        <li data-menuanchor="fourth"><a href="#fourth" style="color:red";>Contact</a></li>
-      </ul>
-      </div> -->
-
-    </div>
-
-    <div class="ms-section" id="left3">
-      <div class="aboutcontents">
-        <div class="aboutpic">
-          <img class="selfie" src="project-pics/selfie.png" alt="Picture of myself">
+      <div class="flexContainer">
+        <div class="box top"></div>
+        <div class="sectionTitle">
+          <div class="name center cursive">About</div>
         </div>
-        <div class="aboutme">
-          <p>I am a junior developer and aspiring technologist looking to enhance the way we live with with inventive software products. I will be completing an immersive web development bootcamp on April 29th and seeking a position in the DC metro area. My skills include:</p>
-          <div class="aboutskills">
-            <p> Ruby on Rails | Javascript | Angular | HTML/CSS </p>
-            <p> MEAN Stack | GitHub | Object Oriented Programming | SQL </p>
+        <div class="box bottom small-flexContainer">
+          <div class="center">
+            <ul id="menu" >
+              <li data-menuanchor="first"><a class="sectionsMenu" href="#first">Welcome</a></li>
+              <li data-menuanchor="second"><a class="sectionsMenu" href="#second">About</a></li>
+              <li data-menuanchor="third"><a class="sectionsMenu" href="#third">Work</a></li>
+              <li data-menuanchor="fourth"><a class="sectionsMenu" href="#fourth">Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="ms-section" id="left3">
+      <div class="flexContainer work">
+        <div class="box projects">
+          <div class="project project1">
+            <a href="#">
+              <img class="project-pic" src="project-pics/showstoppr.png" alt="Craig Eisen ShowStopper Project" >
+              <div class="projectInfo">
+                <span class="projectInfoTitle">Show Stoppr</span></br>
+                <span class="projectInfoDescription">A MEAN-stack app allowing users to keep track of watched movies and shows from streaming web services. Future updates to include a chrome web-extension for automatic record-keeping</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="box projects">
+          <div class="project">
+            <a href="http://johnblakeman.com:7777/#/">
+              <img class="project-pic" src="project-pics/optiroute.png" alt="Craig Eisen Optiroute Project" >
+              <div class="projectInfo">
+                <span class="projectInfoTitle">OptiRoute</span></br>
+                <span class="projectInfoDescription">An AngularJS app that is built with a Ruby on Rails backend, SQL database, and leverages Google mapping APIs. The app optimizes routes based on destinations selected by the user; built in collaboration with two other developers</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="box projects">
+          <div class="project">
+            <a href="https://craig-eisen-bestbet-rails.herokuapp.com/">
+              <img class="project-pic" src="project-pics/bestbet.png" alt="Craig Eisen BestBet Project" >
+              <div class="projectInfo">
+                <span class="projectInfoTitle">BestBet</span></br>
+                <span class="projectInfoDescription">A Ruby on Rails-based app to analyze archival NFL betting data. Allows dynamics filtering of data by various criteria</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     <div class="ms-section" id="left4">
-      <div class="name center cursive">Contact</div>
+      <div class="flexContainer">
+        <div class="box top"></div>
+        <div class="sectionTitle">
+          <div class="name center cursive">Contact</div>
+        </div>
+        <div class="box bottom small-flexContainer">
+          <div class="center">
+            <ul id="menu" >
+              <li data-menuanchor="first"><a class="sectionsMenu" href="#first">Welcome</a></li>
+              <li data-menuanchor="second"><a class="sectionsMenu" href="#second">About</a></li>
+              <li data-menuanchor="third"><a class="sectionsMenu" href="#third">Work</a></li>
+              <li data-menuanchor="fourth"><a class="sectionsMenu" href="#fourth">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -95,8 +141,8 @@
         <div class="box bottom small-flexContainer">
           <div class="right">
             <ul id="menu">
-              <li data-menuanchor="third"><a href="#third">About</a></li>
-              <li data-menuanchor="fourth"><a href="#fourth">Contact</a></li>
+              <li data-menuanchor="third"><a class="topMenu" href="#third">Work</a></li>
+              <li data-menuanchor="fourth"><a class="topMenu" href="#fourth">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -106,36 +152,37 @@
     </div>
 
     <div class="ms-section" id="right2">
-
-      <div class="flexContainer">
-        <div class="box projects">
-          <div class="project project1">
-            <a href="johnblakeman.com:7777/#/">
-              <img class="project-pic" src="project-pics/optiroute.png" alt="Craig Eisen placeholder for project4" >
-
-            </a>
-          </div>
+      <div class="aboutcontents">
+        <div class="aboutpic">
+          <img class="selfie" src="project-pics/selfie.png" alt="Picture of myself">
         </div>
-
-        <div class="box projects">
-          <div class="project">
-            <a href="johnblakeman.com:7777/#/">
-              <img class="project-pic" src="project-pics/optiroute.png" alt="Craig Eisen Optiroute Project" >
-            </a>
-          </div>
-        </div>
-
-        <div class="box projects">
-          <div class="project">
-            <a href="https://craig-eisen-bestbet-rails.herokuapp.com/">
-              <img class="project-pic" src="project-pics/bestbet.png" alt="Craig Eisen BestBet Project" >
-            </a>
+        <div class="aboutme">
+          <p>I am a junior developer and aspiring technologist looking to enhance the way we live with with inventive software products. I will be completing an immersive web development bootcamp on April 29th and seeking a position in the DC metro area. My skills include:</p>
+          <div class="aboutskills">
+            <p> Ruby on Rails | Javascript | Angular | HTML/CSS </p>
+            <p> MEAN Stack | GitHub | Object Oriented Programming | SQL </p>
           </div>
         </div>
       </div>
+    </div>
 
       <div class="ms-section" id="right3">
-        <div class="name center cursive">About</div>
+        <div class="flexContainer">
+          <div class="box top"></div>
+          <div class="sectionTitle">
+            <div class="name center cursive">Work</div>
+          </div>
+          <div class="box bottom small-flexContainer">
+            <div class="center">
+              <ul id="menu" >
+                <li data-menuanchor="first"><a class="sectionsMenu" href="#first">Welcome</a></li>
+                <li data-menuanchor="second"><a class="sectionsMenu" href="#second">About</a></li>
+                <li data-menuanchor="third"><a class="sectionsMenu" href="#third">Work</a></li>
+                <li data-menuanchor="fourth"><a class="sectionsMenu" href="#fourth">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="ms-section" id="right4">

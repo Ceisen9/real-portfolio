@@ -7,6 +7,7 @@
 
 * {
   font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  box-sizing: border-box;
 }
 
 .cursive {
@@ -22,9 +23,6 @@
   font-size: 30px;
 }
 
-
-
-
 .flexContainer{
   /*border: 1px solid black;*/
   display:flex;
@@ -33,6 +31,7 @@
   height: 100%;
   box-sizing: border-box;
 }
+
 
 .box{
   height: 25%;
@@ -46,14 +45,47 @@
 .project{
   margin: 0 auto;
   width: 60%;
-  height: 100%;
-  /*border: 1px solid goldenrod;*/
+  height: inherit;;
   z-index: 1;
+
 }
 
-.project:hover{
-   background-color: gray;
+.project{
+  position: relative;
+}
+
+.projectInfo{
+  color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+.projectInfoTitle{
+  font-size: 30px;
+}
+
+.projectInfoDescription{
+  font-size: 15px;
+}
+
+.projectInfo{
+   position: absolute;
+   top: 90%;
+   left: 0;
+   width: 100%;
+}
+
+
+.project:hover img{
+  opacity: .1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
  }
+
+.project:hover .projectInfo{
+   color: rgba(165,147,224,1);
+ }
+
+
 
 .project-pic{
   width: 100%;
@@ -93,14 +125,12 @@
 	display:inline-block;
 	margin: 0 10px;
 	color: #566270;
-
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
 
 #menu li a{
 	text-decoration:none;
-	color: #566270;
   padding: 4px 18px;
   display:block;
 }
@@ -113,18 +143,21 @@
 	text-decoration: underline;
 }
 
+.topMenu{
+  color: #566270;
+}
+
 .social-media-icons{
   text-align: center;
 }
 
 .social-media-outer{
   display: inline-block;
-  /*border: 1px solid goldenrod;*/
 }
 
 .social-media-outer:hover{
-  background-color: #E0E3DA;
-  border-radius: 10%;
+  opacity: .8;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 .icon{
@@ -160,9 +193,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid goldenrod;
   height:100%;
-  /*align-content: center;*/
 }
 
 .aboutme{
@@ -189,4 +220,8 @@
   width: 35%;
   border-radius: 50%;
   margin: 0 auto;
+}
+
+.sectionsMenu{
+  color: #A593E0;
 }
