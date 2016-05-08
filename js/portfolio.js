@@ -8,7 +8,7 @@ $(document).ready(function() {
     loopBottom: false,
     loopTop: false,
     scrollingSpeed: 200,
-    touchSensitivity: 5,
+    touchSensitivity: 10,
     navigationPosition: 'left',
     css3: true,
   });
