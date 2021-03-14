@@ -22,8 +22,13 @@
   font-size: 30px;
 }
 
+.welcome {
+  margin-right: 53.5px;
+}
 
-
+.about {
+  margin-left: -53.5px;
+}
 
 .flexContainer{
   /*border: 1px solid black;*/

@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $('#myContainer').multiscroll({
     sectionsColor: ['#FFFFF3', '#566270', '#566270', '#566270'],
-    anchors: ['first', 'second', 'third', 'fourth'],
+    anchors: ['first', 'second', 'third'],
     menu: '#menu',
     navigation: true,
-    navigationTooltips: ['Welcome', 'Work', 'About', 'Contact'],
+    navigationTooltips: ['Welcome', 'About', 'Contact'],
     loopBottom: false,
     loopTop: false,
     scrollingSpeed: 200,
